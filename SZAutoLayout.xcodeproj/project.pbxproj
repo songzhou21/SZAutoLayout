@@ -13,6 +13,7 @@
 		5893A27A216DBEF7008BE30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5893A279216DBEF7008BE30B /* Assets.xcassets */; };
 		5893A27D216DBEF7008BE30B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5893A27B216DBEF7008BE30B /* LaunchScreen.storyboard */; };
 		5893A280216DBEF7008BE30B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893A27F216DBEF7008BE30B /* main.m */; };
+		5893A289216DBF3D008BE30B /* UIView+SZAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893A288216DBF3D008BE30B /* UIView+SZAutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5893A27C216DBEF7008BE30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5893A27E216DBEF7008BE30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5893A27F216DBEF7008BE30B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5893A287216DBF3D008BE30B /* UIView+SZAutoLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SZAutoLayout.h"; sourceTree = "<group>"; };
+		5893A288216DBF3D008BE30B /* UIView+SZAutoLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SZAutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		5893A26F216DBEF6008BE30B /* SZAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				5893A286216DBF2C008BE30B /* src */,
 				5893A270216DBEF6008BE30B /* AppDelegate.h */,
 				5893A271216DBEF6008BE30B /* AppDelegate.m */,
 				5893A273216DBEF6008BE30B /* ViewController.h */,
@@ -69,6 +73,15 @@
 				5893A27F216DBEF7008BE30B /* main.m */,
 			);
 			path = SZAutoLayout;
+			sourceTree = "<group>";
+		};
+		5893A286216DBF2C008BE30B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5893A287216DBF3D008BE30B /* UIView+SZAutoLayout.h */,
+				5893A288216DBF3D008BE30B /* UIView+SZAutoLayout.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5893A289216DBF3D008BE30B /* UIView+SZAutoLayout.m in Sources */,
 				5893A275216DBEF6008BE30B /* ViewController.m in Sources */,
 				5893A280216DBEF7008BE30B /* main.m in Sources */,
 				5893A272216DBEF6008BE30B /* AppDelegate.m in Sources */,
