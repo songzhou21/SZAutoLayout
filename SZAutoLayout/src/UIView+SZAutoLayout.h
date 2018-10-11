@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// convenience methods
 /// Align all 4 edges to another view
-- (NSArray<NSLayoutConstraint *> *)sz_alignToView:(__kindof UIView *)view;
+- (NSArray<NSLayoutConstraint *> *)sz_alignToView:(id)view;
 
 - (NSArray<NSLayoutConstraint *> *)sz_alignTop:(CGFloat)top bottom:(CGFloat)bottom toView:(id)view;
 - (NSArray<NSLayoutConstraint *> *)sz_alignLeading:(CGFloat)leading trailing:(CGFloat)trailing toView:(id)view;
