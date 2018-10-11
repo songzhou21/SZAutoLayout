@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray<NSLayoutConstraint *> *)sz_alignTop:(CGFloat)top leading:(CGFloat)leading bottom:(CGFloat)bottom trailing:(CGFloat)trailing toView:(id)view;
 
 /// convenience methods
-
 /// Align all 4 edges to another view
 - (NSArray<NSLayoutConstraint *> *)sz_alignToView:(__kindof UIView *)view;
 
@@ -25,6 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray<NSLayoutConstraint *> *)sz_alignLeading:(CGFloat)leading trailing:(CGFloat)trailing toView:(id)view;
 - (NSArray<NSLayoutConstraint *> *)sz_alignTop:(CGFloat)top leading:(CGFloat)leading toView:(id)view;
 - (NSArray<NSLayoutConstraint *> *)sz_alignBottom:(CGFloat)bottom trailing:(CGFloat)trailing toView:(id)view;
+
+/// Align all 4 edges to another view, general method
+- (NSArray<NSLayoutConstraint *> *)sz_alignAnchorTop:(nullable NSNumber *)top leading:(nullable NSNumber *)leading bottom:(nullable NSNumber *)bottom trailing:(nullable NSNumber *)trailing toView:(id)view;
+
+#pragma mark - Active constraints
+- (void)sz_activateConstraints:(NSArray *)constraints;
 
 @end
 
